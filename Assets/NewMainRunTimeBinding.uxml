@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Background" picking-mode="Ignore" style="flex-grow: 1; left: 0; position: absolute; top: 0; right: 0; bottom: 0; background-color: rgba(145, 210, 212, 0.92);">
+        <ui:VisualElement name="playerDataBlock" style="flex-grow: 0; background-color: rgba(32, 41, 41, 0.57); width: 280px; height: 85px;">
+            <ui:Label name="playerName" />
+            <ui:ProgressBar name="playerRating" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Background" picking-mode="Ignore" style="flex-grow: 1; left: 0; position: absolute; top: 0; right: 0; bottom: 0; background-color: rgba(145, 210, 212, 0.92);">
+        <ui:VisualElement name="playerDataBlock" style="flex-grow: 0; background-color: rgba(32, 41, 41, 0.57); width: 280px; height: 85px;">
+            <ui:Label name="playerName" data-source-type="Player.PlayerData, Assembly-CSharp" data-source-path="Name" data-source="project://database/Assets/PlayerInformation.asset?fileID=11400000&amp;guid=54a98a622b63d4c6fb7c17fb13279fb0&amp;type=2#PlayerInformation">
+                <Bindings>
+                    <ui:DataBinding property="text" data-source-path="Name" data-source="project://database/Assets/PlayerInformation.asset?fileID=11400000&amp;guid=54a98a622b63d4c6fb7c17fb13279fb0&amp;type=2#PlayerInformation" binding-mode="ToTarget" />
+                </Bindings>
+            </ui:Label>
+            <ui:ProgressBar name="playerRating" data-source-path="Rating" data-source-type="Player.PlayerData, Assembly-CSharp" data-source="project://database/Assets/PlayerInformation.asset?fileID=11400000&amp;guid=54a98a622b63d4c6fb7c17fb13279fb0&amp;type=2#PlayerInformation">
+                <Bindings>
+                    <ui:DataBinding property="value" data-source-path="Rating" data-source-type="Player.PlayerData, Assembly-CSharp" data-source="project://database/Assets/PlayerInformation.asset?fileID=11400000&amp;guid=54a98a622b63d4c6fb7c17fb13279fb0&amp;type=2#PlayerInformation" />
+                    <ui:DataBinding property="title" data-source-path="Rating" data-source="project://database/Assets/PlayerInformation.asset?fileID=11400000&amp;guid=54a98a622b63d4c6fb7c17fb13279fb0&amp;type=2#PlayerInformation" />
+                </Bindings>
+            </ui:ProgressBar>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
